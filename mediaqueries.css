@@ -117,7 +117,7 @@
 
     .section__pic-container {
         display: flex;
-        width: auto;
+        width: 46vw;
         height: 46vw;
         justify-content: center;
     }
@@ -132,14 +132,5 @@
 
     .text-container {
         text-align: justify;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .section__pic-container {
-        display: flex;
-        width: 30vw;
-        height: 20vh;
-        justify-content: center;
     }
 }
