@@ -3,10 +3,9 @@
 section {
     padding-top: 4vh;
     height: 96vh;
+    margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
-    overflow-x: hidden;
-    overflow: hidden;
 }
 
 .section-container {
@@ -14,23 +13,12 @@ section {
 }
 
 /* PROFILE SECTION */
+
 #profile {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
-        url("assets/cubes-2492010_1920.jpg");
-    background-size: cover;
-    background-position: center;
-    /* This keeps the image centered */
-    background-repeat: no-repeat;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-    padding: 20%;
-    color: white;
-    padding: 60px 0;
-    /* Add padding for space */
+    gap: 5rem;
+    height: 80vh;
 }
 
 .profile-pic-container {
@@ -108,16 +96,7 @@ section {
 .title {
     font-size: 3rem;
     text-align: center;
-    width: 100%;
-    /* Change this to max-width */
-    max-width: 100%;
-    /* Ensure it doesn't exceed its container */
-    white-space: nowrap;
-    /* Prevents wrapping to a new line */
-    overflow-x: hidden;
-    overflow: hidden;
 }
-
 
 #socials-container {
     display: flex;
@@ -152,8 +131,13 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-    border: rgb(255, 255, 255) 0.1rem solid;
-    /* color: rgb(53, 53, 53); */
+    border: rgb(53, 53, 53) 0.1rem solid;
+    color: rgb(53, 53, 53);
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+    cursor: pointer;
 }
 
 .btn-color-1,
@@ -163,10 +147,16 @@ section {
 }
 
 .btn-color-1:hover {
-    cursor: pointer;
-    background: white;
+    background: none;
     color: black;
-    border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-2 {
+    background: none;
+}
+
+.btn-color-2:hover {
+    border: rgb(255, 255, 255) 0.1rem solid;
 }
 
 .btn-container {
@@ -177,12 +167,6 @@ section {
 
 #about {
     position: relative;
-    padding: 60px 0;
-    /* Add padding for space */
-}
-
-.bootgrid {
-    margin-top: 20px;
 }
 
 .about-containers {
@@ -229,9 +213,6 @@ section {
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
-    height: 100%;
-    /* Ensure equal height */
-    font-size: 100%;
 }
 
 .section-container {
@@ -243,8 +224,6 @@ section {
 
 #experience {
     position: relative;
-    padding: 60px 0;
-    /* Add padding for space */
 }
 
 .experience-sub-title {
@@ -286,8 +265,6 @@ article .icon {
 
 #projects {
     position: relative;
-    padding: 60px 0;
-    /* Add padding for space */
 }
 
 .color-container {
@@ -307,38 +284,10 @@ article .icon {
     color: black;
 }
 
-.scroll-top .navbar {
-    background-color: transparent !important;
+.project-btn {
+    color: black;
+    border-color: rgb(163, 163, 163);
 }
-
-.bootcarousel {
-    margin-top: 20px;
-}
-
-.carousel-item img {
-    object-fit: cover;
-    object-position: center;
-    height: 50vh;
-    overflow: hidden;
-    border-radius: 5%;
-}
-
-.carousel-item:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 5%;
-}
-
-.carousel-caption {
-    z-index: 1;
-    /* brings caption text to the front */
-}
-
 
 /* CONTACT SECTION */
 
@@ -347,16 +296,6 @@ article .icon {
     justify-content: center;
     flex-direction: column;
     height: 70vh;
-    padding: 60px 0;
-    /* Add padding for space */
-}
-
-#contact a:hover {
-    color: darkgray;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-    /* how far the underline is from the bottom of text */
-    text-decoration-color: rgb(181, 181, 181);
 }
 
 .contact-info-upper-container {
@@ -380,10 +319,9 @@ article .icon {
 
 .contact-info-container p {
     font-size: larger;
-    margin: 0;
 }
 
-.contact-info-container img:hover {
+.contact-icon {
     cursor: default;
 }
 
@@ -396,7 +334,6 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-    margin-top: 30px;
     height: 26vh;
     margin: 0 1rem;
 }

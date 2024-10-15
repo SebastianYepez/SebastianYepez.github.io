@@ -5,26 +5,26 @@
 /* "*" adds the style to the WHOLE page */
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    /* Can download a font off Google Fonts */
-    font-family: 'Poppins', sans-serif;
-    background-color: rgb(100, 131, 131);
-    /* background-color: rgb(179, 189, 188); */
+  /* Can download a font off Google Fonts */
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(100, 131, 131);
+  /* background-color: rgb(179, 189, 188); */
 }
 
 html {
-    /* So when we add the links to sections in our page it won't instantly go there, 
+  /* So when we add the links to sections in our page it won't instantly go there, 
    it will scroll down smoothly. */
-    scroll-behavior: smooth
+  scroll-behavior: smooth;
 }
 
 p {
-    /* Color of paragraph text */
-    color: rgb(85, 85, 85);
+  /* Color of paragraph text */
+  color: rgb(85, 85, 85);
 }
 
 /* TRANSITION */
@@ -33,5 +33,10 @@ p {
 that will change between two styles and not be instantaneous */
 a,
 .btn {
-    transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.bg {
+  background-color: rgb(60, 91, 91);
+  /* for different colored sections */
 }

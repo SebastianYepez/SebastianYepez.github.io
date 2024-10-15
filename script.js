@@ -1,9 +1,11 @@
-/* Function for hamburger menu */
-function toggleMenu() {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
-    //appends a class open to .menu-links, deletes if clicked again
-    icon.classList.toggle("open");
-    //appends a class open to .hamburger-icon, deletes if clicked again
+// This is javascript code that adds the class "scroll-top" to the body whenever the body is at the top of the page and removes it otherwise.
+
+window.onscroll = onScroll;
+
+function onScroll() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.body.classList.remove("scroll-top");
+  } else {
+    document.body.classList.add("scroll-top");
+  }
 }

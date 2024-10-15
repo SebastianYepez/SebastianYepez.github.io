@@ -1,12 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <!--HTML Boiler Template-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Part 1 Portfolio</title>
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- More Icons -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     
-    <!--Title that shows on tab-->
-    <title>Sebastian Yepez - Portfolio</title>
 
     <!--Referencing Style Sheets-->
     <link rel="stylesheet" href="style.css" />
@@ -17,42 +29,43 @@
     <!-- Favicon -->
     <link rel="icon" href="assets/icons/favi.png" type="image/png">
 </head>
-<body>
-    <!--Navigation Page: represents a section of a page that links to other pages or to parts within the page-->
+
+  <!-- Scrollspy highlights the section you are on -->
+  <body class="scroll-top"
+        data-bs-spy="scroll"
+        data-bs-target=".navbar"
+        data-bs-offset="100">
+        <!-- can spy by headings instead -->    
+         <!--Navigation Page: represents a section of a page that links to other pages or to parts within the page-->
     <!--Desktop Navigation-->
-    <nav id = "desktop-nav">
-        <div class="logo">Sebastian Yepez</div>
-        <div>
-            <!--Unordered list-->
-            <ul class="nav-links">
-                <!-- "a" represents href element (hover for more info)-->
-                <!-- a stands for anchor - where the link lands via the name attribute 
-                     and outgoing link via href attribute -->
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <!--Hamburger Navigation-->
-    <!-- Hamburger button is the ☰ that opens links -->
-    <nav id = "hamburger-nav">
-        <div class="logo">Sebastian Yepez</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+        <!-- Navbar -->
+    <!-- Navbar-expand - elemets are horizontal rather than vertical -->
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+        <div class="container">
+          <a href="#profile" class="navbar-brand">
+            <i class="bi bi-house-door"></i>
+          </a>
+  
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#hamburg-target"
+          >
+            <span class="navbar-toggler-icon"> </span>
+          </button>
+  
+          <!-- Want this to collapse when under a certain size (don't forget breakpoints navbar-expand-md)-->
+          <div id="hamburg-target" class="collapse navbar-collapse">
+            <div class="navbar-nav ms-auto">
+              <a href="#about" class="nav-link">About</a>
+              <a href="#experience" class="nav-link">Skills</a>
+              <a href="#projects" class="nav-link">Projects</a>
+              <a href="#contact" class="nav-link">Contact</a>
             </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
+          </div>
         </div>
-    </nav>
+      </nav>
+
     <!--My Hero/Profile Section-->
     <section id = "profile">
         <div class="section__pic-container">
@@ -61,7 +74,7 @@
         </div>
         </div>
         <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
+            <p class="section__text__p1" style="color:white">Hello, I'm</p>
             <h1 class="title">Sebastian Yepez</h1>
             <p class="section__text__p2">Software and Data Engineer</p>
             <div class="btn-container">
@@ -84,52 +97,74 @@
             </div>
         </div>
     </section>
-    <!--About Me Section-->
-    <section id="about">
-        <!--Not the same as in Profile Section bc it doesn't have the font weight-->
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/me/Sitting.JPG"
-                alt="Profile picture"
-                class="about-pic"/>
+
+<!--About Me Section-->
+<section id="about">
+    <div class="container">
+        <!-- Section Title -->
+        <p class="section__text__p1">Get To Know More About</p>
+        <h1 class="title">My Mission</h1>
+
+        <!-- Section Grid (Image on Left, Details & Text on Right) -->
+        <div class="row bootgrid">
+            <!-- Left Column: Mission Picture -->
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <div class="section__pic-container about-pic img-fluid">
+                    <img src="./assets/me/Sitting.JPG" alt="Profile picture" class="about-pic img-fluid"/>
+                </div>
             </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/icons/experience.png"
-                        alt="ribbon icon"
-                        class="icon"
-                        />
-                        <h3>Experience</h3>
-                        <p> Internship at Fetching Foods <br/> Internship at Odditt  <br/> STEM Student Mentor </p>
+
+            <!-- Right Column: Details and Text -->
+            <div class="col-md-6">
+                <!-- Details (Experience, Education) - Side by Side -->
+                <div class="row">
+                    <!-- Experience -->
+                    <div class="col-md-6 mb-3">
+                        <div class="details-container d-flex align-items-center">
+                            <img src="./assets/icons/experience.png" alt="ribbon icon" class="icon me-3"/>
+                            <div>
+                                <h3>Experience</h3>
+                                <p> - Internship at Fetching Foods <br/>- Internship at Odditt <br/>- STEM Student Mentor</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="details-container">
-                        <img src="./assets/icons/education.png"
-                        alt="education icon"
-                        class="icon"
-                        />
-                        <h3>Education</h3>
-                        <p>B.S. Computer Science <br />B.S. Mathematics</p>
+
+                    <!-- Education -->
+                    <div class="col-md-6 mb-3">
+                        <div class="details-container d-flex align-items-center">
+                            <img src="./assets/icons/education.png" alt="education icon" class="icon me-3"/>
+                            <div>
+                                <h3>Education</h3>
+                                <p>- B.S. Computer Science <br />- B.S. Mathematics</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="text-container">
-                    <p style = color:white> Hi! My name is Sebastian Yepez and I currently attend UNLV studying for a 
-                        Bachelor's of Science in both Computer Science and Mathematics with a concentration in Actuarial Sciences.
-                        I made this website with the purpose of showcasing some of my projects and experiences.
+
+                <!-- Text Below Details -->
+                <div class="col-12 mt-4 text-container">
+                    <p style="color:white;">
+                        Hi! My name is Sebastian Yepez and I currently attend UNLV studying for a Bachelor's of Science 
+                        in both Computer Science and Mathematics with a concentration in Actuarial Sciences. I aim to make 
+                        an impact in the technological world by providing high-end products for consumers.
                     </p>
                 </div>
             </div>
         </div>
-        <!--Jumps to #experience section of our page-->
-        <img src="./assets/icons/arrow.png" alt="arrow icon" class="icon arrow"
-        onclick="location.href='#experience'"/>
-    </section>
+
+        <!-- Arrow Icon to Scroll Down -->
+        <div class="text-center mt-4">
+            <img src="./assets/icons/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='#experience'"/>
+        </div>
+    </div>
+</section>
+
+
+
     <!--Experience Section-->
-    <section id="experience">
+    <section id="experience" class="container-fluid bg">
         <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
+        <h1 class="title">Skills</h1>
         <div class="experience-details-container">
             <div class="about-containers">
                 <div class="details-container">
@@ -137,54 +172,42 @@
                     <div class="article-container">
                         <!-- An article is a self-contained item intended for re-use -->
                         <article>
-                            <img src="./assets/icons/checkmark.png" 
-                            alt="experience icon" 
-                            class="icon"/>
+                            <i class="devicon-cplusplus-plain colored" style="font-size: 3rem"></i>
                             <div>
                                 <h3>C++</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/icons/checkmark.png" 
-                            alt="experience icon" 
-                            class="icon"/>
+                            <i class="devicon-git-plain colored" style="font-size: 3rem"></i>
                             <div>
                                 <h3>Git</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/icons/checkmark.png" 
-                            alt="experience icon" 
-                            class="icon"/>
+                            <i class="devicon-html5-plain colored" style="font-size: 3rem"></i>
                             <div>
                                 <h3>HTML</h3>
                                 <p>Intermediate</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/icons/checkmark.png" 
-                            alt="experience icon" 
-                            class="icon"/>
+                            <i class="devicon-css3-plain colored" style="font-size: 3rem"></i>
                             <div>
                                 <h3>CSS</h3>
                                 <p>Intermediate</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/icons/checkmark.png" 
-                            alt="experience icon" 
-                            class="icon"/>
+                            <i class="devicon-javascript-plain colored" style="font-size: 3rem"></i>
                             <div>
                                 <h3>JavaScript</h3>
                                 <p>Basic</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/icons/checkmark.png" 
-                            alt="experience icon" 
-                            class="icon"/>
+                            <i class="devicon-arduino-plain colored" style="font-size: 3rem"></i>
                             <div>
                                 <h3>Arduino</h3>
                                 <p>Intermediate</p>
@@ -197,36 +220,29 @@
                     <div class="article-container">
                         <!-- An article is a self-contained item intended for re-use -->
                         <article>
-                            <img src="./assets/icons/checkmark.png" 
-                            alt="experience icon" 
-                            class="icon"/>
+
+                            <i class="devicon-python-plain colored" style="font-size: 3rem"></i>
                             <div>
                                 <h3>Python</h3>
                                 <p>Intermediate</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/icons/checkmark.png" 
-                            alt="experience icon" 
-                            class="icon"/>
+                            <i class="devicon-amazonwebservices-plain-wordmark colored" style="font-size: 3rem"></i>
                             <div>
                                 <h3>AWS</h3>
                                 <p>Intermediate</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/icons/checkmark.png" 
-                            alt="experience icon" 
-                            class="icon"/>
+                            <i class="devicon-postgresql-plain colored" style="font-size: 3rem"></i>
                             <div>
                                 <h3>PostgreSQL</h3>
                                 <p>Basic</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/icons/checkmark.png" 
-                            alt="experience icon" 
-                            class="icon"/>
+                            <i class="devicon-jupyter-plain-wordmark colored" style="font-size: 3rem;""></i>
                             <div>
                                 <h3>Jupyter Notebook</h3>
                                 <p>Basic</p>
@@ -241,70 +257,81 @@
     </section>
 
     <!--Project Section-->
+
     <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/projects/JAAK-GPT.png"
-                        alt = "JAAK-GPT Project"
-                        class="project-img" style="object-fit:contain;"/>
-                    </div>
-                    <h2 class="experience-subtitle project-title">JAAK-GPT 2024 STEM Lab Project</h2>
-                    <!-- Use window.open() to open the button's link in a new tab -->
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" 
-                        onclick="window.open('https://github.com/SebastianYepez/Vegas-STEM-Lab-2024', '_blank')">
-                        Github</button>
-                        <button disabled class="btn btn-color-2 project-btn" 
-                        onclick="location.href='https://.com'"
-                        style="cursor: default;">
-                        Coming Soon </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/projects/Knight's_Tour.png"
-                        alt = "Project 2"
-                        class="project-img"/>
-                    </div>
-                    <h2 class="experience-subtitle project-title">Knight's Tour</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" 
-                        onclick="window.open('https://github.com/SebastianYepez/Knights-Tour', '_blank')">
-                        Github</button>
-                        <button disabled class="btn btn-color-2 project-btn" 
-                        onclick="location.href='https://.com'"
-                        style="cursor: default;">
-                        Coming Soon</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/projects/STEMLab23_Smarthome.jpg"
-                        alt = "Project 3"
-                        class="project-img"/>
-                    </div>
-                    <h2 class="experience-subtitle project-title">Smart Home 2023 STEM Lab Project</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" 
-                        onclick="window.open('https://github.com/SebastianYepez/Vegas-STEM-Lab-2023', '_blank')">
-                        Github</button>
-                        <button disabled class="btn btn-color-2 project-btn" 
-                        onclick="location.href='https://.com'"
-                        style="cursor: default;">
-                        Coming Soon</button>
-                    </div>
-                </div>
+    <div class="container">
+            <p class="section__text__p1">Browse My Recent</p>
+            <h1 class="title">Projects</h1>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-interval="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-        </div>
-        <img src="./assets/icons/arrow.png" alt="arrow icon" class="icon arrow"
-        onclick="location.href='#contact'" >
+            <div class="carousel-inner bootcarousel">
+              <div class="carousel-item active">
+                <img src="./assets/projects/JAAK-GPT.png" class="d-block w-100" alt="JAAK-GPT Project">
+                <div class="carousel-caption d-md-block">
+                    <h5>JAAK-GPT 2024 STEM Lab Project</h5>
+                    <p style="color:white">A project I led a group of middle school students in completing.</p>
+                <!-- Use window.open() to open the button's link in a new tab -->
+                    <div class="btn-container">
+                    <button class="btn btn-primary" 
+                    onclick="window.open('https://github.com/SebastianYepez/Vegas-STEM-Lab-2024', '_blank')">
+                    Github</button>
+                    <button disabled class="btn btn-color-2" 
+                    onclick="location.href='https://.com'"
+                    style="cursor: default;">
+                    Coming Soon </button>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/projects/Knight's_Tour.png" class="d-block w-100" alt="Project 2">
+                <div class="carousel-caption d-md-block">
+                  <h5>Knight's Tour</h5>
+                  <p style="color:white">A project that uses a recursive backtracking algorithm to present a solution.</p>
+                <!-- Use window.open() to open the button's link in a new tab -->
+                    <div class="btn-container">
+                    <button class="btn btn-primary" 
+                    onclick="window.open('https://github.com/SebastianYepez/Knights-Tour', '_blank')">
+                    Github</button>
+                    <button disabled class="btn btn-color-2" 
+                    onclick="location.href='https://.com'"
+                    style="cursor: default;">
+                    Coming Soon </button>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/projects/STEMLab23_Smarthome.jpg" class="d-block w-100" alt="JAAK-GPT Project">
+                <div class="carousel-caption d-md-block">
+                  <h5>Smart Home 2023 STEM Lab Project</h5>
+                  <p style="color:white">A project I led a group of middle school students in completing in 2023.</p>
+                <!-- Use window.open() to open the button's link in a new tab -->
+                <div class="btn-container">
+                <button class="btn btn-primary" 
+                onclick="window.open('https://github.com/SebastianYepez/Vegas-STEM-Lab-2023', '_blank')">
+                Github</button>
+                <button disabled class="btn btn-color-2" 
+                onclick="location.href='https://.com'"
+                style="cursor: default;">
+                Coming Soon </button>
+                </div>
+                </div>
+              </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
     </section>
+    
     <!-- Contact Section -->
-     <section id="contact">
+     <section id="contact" class="container-fluid bg">
         <p class="section__text__p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
@@ -326,23 +353,40 @@
                 <!-- Make sure hyperlinked text is within the <a> tag, target="_blank" opens a new tab -->
                 <p><a href="https://linkedin.com/in/sebastian-yepez" target="_blank">LinkedIn</a></p>
             </div>
+            <div class="contact-info-container">
+                <img
+                    src="./assets/icons/github.png"
+                    alt="GitHub icon"
+                    class="icon contact-icon"
+                />
+                <!-- Make sure hyperlinked text is within the <a> tag, target="_blank" opens a new tab -->
+                <p><a href="https://github.com/SebastianYepez" target="_blank">GitHub</a></p>
+            </div>
         </div>
      </section>
+
      <!-- Footer -->
-      <footer>
+      <footer class="container-fluid bg">
         <nav>
             <div class="nav-links-container">
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#experience">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                 </ul>
             </div>
         </nav>
         <!-- &#169 is the © symbol-->
-        <p>Copyright &#169; 2024 Sebastian Yepez. All Rights Reserved.</p>
+        <p style="margin-top: 20px;color: lightgray;">Copyright &#169; 2024 Sebastian Yepez. All Rights Reserved.</p>
       </footer>
-        <!--Reference JavaScript-->
-        <script src="script.js"></script>
-</body>
+    <!--Reference JavaScript Files-->
+    <!-- Boostrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- My JS -->
+    <script src="script.js"></script>
+  </body>
 </html>
