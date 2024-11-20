@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Sebastian's API Adventure 🪂</title>
+    <!-- Bootstrap CDN -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+        crossorigin="anonymous"
+      />
+  
+      <!-- Bootstrap Icons -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+    <link href="NASA.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <a href="index.html" class="navbar-brand home-button">
+        <i class="bi bi-house-door"></i>
+    </a>
+    <div>
+        <h1 style="margin-bottom: 20px">NASA Image Generator</h1>
+        <img src="assets/image.png" id="main-img" />
+        <p id="main-txt" style="padding: 20px">
+            Enter a keyword and click the button for a random but related NASA
+            image!
+        </p>
+        <div id="label" style="display: block">
+            <label for="query-input">Enter your query:</label>
+            <input
+                style="padding: 5px; text-align: center; background-color: white"
+                type="text"
+                id="query-input"
+                placeholder="e.g., Apollo"
+            />
+        </div>
+        <button id="generate-btn" onclick="getImage()" style="margin-top: 20px">
+            Generate
+        </button>
+    </div>
+</body>
+
+    <script src="script.js"></script>
+  </body>
+</html>

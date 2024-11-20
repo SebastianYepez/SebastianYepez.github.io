@@ -1,0 +1,66 @@
+/* Universal reset but without setting background color */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Add this for better layout consistency */
+}
+
+body {
+    background-color: antiquewhite;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Horizontal centering */
+    height: 100vh;
+    /* Make the parent container take the full viewport height */
+}
+
+#main-img {
+    width: 50vw;
+    /* Set the width of the image to 50% of the viewport width */
+    height: auto;
+    /* Maintain aspect ratio by setting the height to auto */
+    max-width: 600px;
+    /* Limit the maximum width of the image */
+    max-height: 400px;
+    /* Limit the maximum height of the image */
+    object-fit: contain;
+    /* Ensure the content fits within the container without cropping */
+    border-color: black;
+    border-style: solid;
+    background-color: black;
+}
+
+#generate-btn {
+    width: 150px;
+    height: 50px;
+    background-color: forestgreen;
+    color: white;
+}
+
+#generate-btn:hover {
+    transition-duration: 400ms;
+    background-color: teal;
+    color: black;
+    cursor: pointer;
+}
+
+/* Home button */
+.home-button {
+    position: fixed;
+    /* Keeps it static on the screen */
+    top: 10px;
+    /* Adjust top position */
+    left: 10px;
+    /* Adjust left position */
+    z-index: 1000;
+    /* Ensures it stays above other elements */
+    font-size: 24px;
+    /* Adjust icon size */
+    color: black;
+    /* Change to fit your theme */
+    text-decoration: none;
+    margin-left: 10px;
+}
