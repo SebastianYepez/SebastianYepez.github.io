@@ -16,7 +16,7 @@ section {
 /* PROFILE SECTION */
 #profile {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
-        url("assets/cubes-2492010_1920.jpg");
+        url("../assets/cubes-2492010_1920.jpg");
     background-size: cover;
     background-position: center;
     /* This keeps the image centered */
