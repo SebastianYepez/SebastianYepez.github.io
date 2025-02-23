@@ -1,7 +1,7 @@
 {
   "name": "ai_workshops",
   "version": "0.1.0",
-  "homepage": "https://sebastianyepez.github.io/Project_Webpages/ai_workshops",
+  "homepage": "https://sebastianyepez.github.io/ai_workshops",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
