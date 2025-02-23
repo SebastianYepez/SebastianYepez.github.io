@@ -17,7 +17,7 @@ const WorkshopOverview = ({ summaryPoints, resources }) => {
             <ul>
                 {resources.map((resource, index) => (
                     <li key={index}>
-                        <a href={`/ws_resources/${resource.file}`} download>
+                        <a href={`${process.env.PUBLIC_URL}/ws_resources/${resource.file}`} download>
                             ⬇️ {resource.name}
                         </a>
                     </li>
