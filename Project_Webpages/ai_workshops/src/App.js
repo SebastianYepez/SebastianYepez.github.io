@@ -9,7 +9,7 @@ const isLocal = window.location.hostname === "localhost";
 
 function App() {
   return (
-    <Router basename={isLocal ? "/" : "/ai_workshops"}>
+    <Router basename={isLocal ? "/" : "/Project_Webpages/ai_workshops"}>
       <div className="main-container">
         <Navbar />
         <div className="content-wrapper">
