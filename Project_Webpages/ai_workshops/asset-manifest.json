@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Project_Webpages/ai_workshops/static/css/main.a9171c44.css",
-    "main.js": "/Project_Webpages/ai_workshops/static/js/main.99191bbf.js",
+    "main.js": "/Project_Webpages/ai_workshops/static/js/main.950fa31c.js",
     "static/media/ProfilePic.jpg": "/Project_Webpages/ai_workshops/static/media/ProfilePic.53f6aabed250d0dc3803.jpg",
     "static/media/openterm.png": "/Project_Webpages/ai_workshops/static/media/openterm.a6ffb94c83bf7bccde6c.png",
     "static/media/jup_ext.png": "/Project_Webpages/ai_workshops/static/media/jup_ext.7f8a29e4cdafc4dd7b5d.png",
@@ -13,10 +13,10 @@
     "static/media/flask.png": "/Project_Webpages/ai_workshops/static/media/flask.06ac6875cb041cbb25fc.png",
     "index.html": "/Project_Webpages/ai_workshops/index.html",
     "main.a9171c44.css.map": "/Project_Webpages/ai_workshops/static/css/main.a9171c44.css.map",
-    "main.99191bbf.js.map": "/Project_Webpages/ai_workshops/static/js/main.99191bbf.js.map"
+    "main.950fa31c.js.map": "/Project_Webpages/ai_workshops/static/js/main.950fa31c.js.map"
   },
   "entrypoints": [
     "static/css/main.a9171c44.css",
-    "static/js/main.99191bbf.js"
+    "static/js/main.950fa31c.js"
   ]
 }
