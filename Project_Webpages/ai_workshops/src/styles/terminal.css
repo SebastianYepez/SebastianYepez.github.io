@@ -1,0 +1,52 @@
+/* Terminal Container */
+.terminal-container {
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #444;
+    width: 100%;
+    font-family: "Courier New", monospace;
+}
+
+/* Gray Top Bar */
+.terminal-header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Language Name (Left) */
+.terminal-language {
+    color: #bbb;
+}
+
+/* Copy Button (Right) */
+.terminal-copy-button {
+    background: none;
+    border: none;
+    color: #ddd;
+    cursor: pointer;
+    font-size: 14px;
+    transition: color 0.2s ease-in-out;
+}
+
+.terminal-copy-button:hover {
+    color: white;
+}
+
+/* Terminal Body */
+.terminal-body {
+    background-color: #000;
+    padding: 12px;
+    font-size: 14px;
+    overflow-x: auto;
+    /* Enables horizontal scrolling */
+    white-space: pre;
+    /* Prevents wrapping */
+    word-wrap: normal;
+    /* Ensures words do not break */
+}

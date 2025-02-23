@@ -1,0 +1,79 @@
+/* Jupyter Cell */
+.jupyter-cell {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin: 10px 0;
+    font-family: "Courier New", monospace;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Jupyter Input Box */
+.jupyter-input {
+    background-color: #fff;
+    padding: 10px;
+    border-left: 4px solid #307fc7;
+    overflow-x: auto;
+    position: relative;
+    /* Allows positioning of footer */
+}
+
+/* Jupyter Labels */
+.jupyter-label {
+    color: #307fc7;
+    font-weight: bold;
+}
+
+/* Jupyter Footer (Holds "Python" Label and Copy Button) */
+.jupyter-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8px;
+    border-top: 1px solid #ddd;
+    margin-top: 8px;
+}
+
+/* Language Label */
+.jupyter-language {
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Copy Button */
+.jupyter-copy-button {
+    background: none;
+    border: 1px solid #aaa;
+    padding: 3px 8px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #555;
+    transition: all 0.2s ease-in-out;
+    border-radius: 4px;
+}
+
+.jupyter-copy-button:hover {
+    background: #eee;
+    color: #000;
+}
+
+/* Output Section */
+.jupyter-output {
+    overflow-x: auto;
+    background-color: #fff;
+    padding: 10px;
+    border-left: 4px solid #d9534f;
+    margin-top: 5px;
+}
+
+/* Ensure Output Appears Immediately Below */
+.jupyter-output-content {
+    white-space: pre-wrap;
+    font-size: 14px;
+    color: #333;
+    margin-left: 30px;
+    /* Indent output for better alignment */
+}

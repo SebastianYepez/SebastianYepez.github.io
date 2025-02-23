@@ -1,0 +1,4 @@
+Making a webscraper
+Making your own AI agent
+API basics
+Python workshop (2024)

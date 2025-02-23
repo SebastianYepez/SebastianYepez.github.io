@@ -1,0 +1,29 @@
+/* Button Styling */
+.collapsible-btn {
+    background-color: #f8f9fa !important;
+    color: black !important;
+    border-color: black !important;
+    transition: background-color 0.3s ease, box-shadow 0.2s ease-in-out;
+}
+
+/* Smooth Hover Effect */
+.collapsible-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Card Styling */
+.collapsible-card {
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: all 0.8s ease-in-out;
+    /* Smooth transition */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Add Animation for Smooth Closing */
+.collapsible-card.collapsing {
+    height: 0;
+    opacity: 0;
+    transition: height 10000s ease-in-out, opacity 3s ease-in-out;
+}

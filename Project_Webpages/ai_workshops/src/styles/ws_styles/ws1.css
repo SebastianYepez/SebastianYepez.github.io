@@ -1,0 +1,15 @@
+.ws1-openterm-image,
+.ws1-jupcell-image,
+.ws1-jupext-image,
+.ws1-selKern-image {
+    width: 100%;
+    /* Ensures it fits inside its container */
+}
+
+.ws1-myenv-image {
+    width: 40%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}

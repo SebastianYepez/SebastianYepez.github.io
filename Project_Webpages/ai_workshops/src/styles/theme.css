@@ -1,0 +1,69 @@
+/* src/styles/theme.css */
+html,
+body {
+    height: 100vh;
+    /* Makes sure they take the full height */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa !important;
+}
+
+code {
+    display: block;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+section {
+    margin-top: 30px;
+}
+
+
+/* Main layout container to stretch content */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Ensures full viewport height */
+}
+
+/* Ensures content expands before the footer */
+.content-wrapper {
+    flex: 1;
+    /* Pushes the footer to the bottom if content is short */
+}
+
+/* Footer styles */
+.footer {
+    /* background-color: #222; */
+    /* Dark background */
+    color: gray;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        font-size: 12px;
+        padding: 10px 0;
+    }
+}
+
+.scroll-link {
+    color: #006FFF;
+    /* Default hyperlink blue */
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.scroll-link:visited {
+    color: #551A8B;
+    /* Default visited link color */
+}
+
+.scroll-link:hover {
+    color: #0000CC;
+    /* Slightly darker blue on hover */
+}
