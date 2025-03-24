@@ -12,9 +12,17 @@
 body {
   /* Can download a font off Google Fonts */
   font-family: "Poppins", sans-serif;
-  background-color: rgb(100, 131, 131);
-  /* background-color: rgb(179, 189, 188); */
+  /* background-color: rgb(100, 131, 131); */
 }
+
+/* Fix Bootstrap navbar being reset by Tailwind */
+.navbar,
+.navbar * {
+  /* Best for undoing Tailwind Preflight */
+  box-sizing: border-box;
+  /* Reapply Bootstrap's box model */
+}
+
 
 html {
   /* So when we add the links to sections in our page it won't instantly go there, 
@@ -24,7 +32,7 @@ html {
 
 p {
   /* Color of paragraph text */
-  color: rgb(85, 85, 85);
+  /* color: rgb(85, 85, 85); */
 }
 
 /* TRANSITION */
@@ -36,7 +44,69 @@ a,
   transition: all 300ms ease;
 }
 
-.bg {
+/* .bg {
   background-color: rgb(60, 91, 91);
   /* for different colored sections */
+/* } */
+
+/* Apply dark background and light text site-wide */
+body {
+  background-color: #0f172a;
+  color: #ffffff;
+}
+
+/* Optional: soften text colors */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #e2e8f0;
+}
+
+/* Navbar overrides */
+.navbar {
+  background-color: #1e293b !important;
+}
+
+.navbar .nav-link {
+  color: #ffffff !important;
+}
+
+.navbar .nav-link:hover {
+  color: #00ccdd !important;
+}
+
+/* Buttons */
+.btn-color-1 {
+  background-color: #00ccdd;
+  color: #0f172a;
+  border: none;
+}
+
+.btn-color-1:hover {
+  background-color: #14b8a6;
+  color: #ffffff;
+}
+
+/* Footer */
+footer {
+  background-color: #1e293b;
+  color: #94a3b8;
+}
+
+/* Other containers or section backgrounds (optional) */
+.bg {
+  background-color: #0f172a;
+}
+
+/* Custom tweaks */
+.details-container,
+.section__pic-container,
+.article-container {
+  background-color: #1e293b;
+  border-radius: 10px;
+  padding: 1rem;
 }

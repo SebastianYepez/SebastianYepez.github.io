@@ -20,6 +20,13 @@ footer nav {
   /* By default, paragraph text is 1 rem */
 }
 
+.nav-link.active {
+  font-weight: bold;
+  color: #0d6efd !important;
+  /* Bootstrap primary blue */
+  border-bottom: 2px solid #0d6efd;
+}
+
 /* link text */
 a {
   color: black;

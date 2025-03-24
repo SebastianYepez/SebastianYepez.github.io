@@ -2,9 +2,6 @@
 
 /* When screen width < 1400 px, adjust structures accordingly */
 @media screen and (min-width: 1200px) {
-  #profile {
-    height: 83vh;
-  }
 
   .about-containers {
     flex-wrap: wrap;
@@ -20,11 +17,6 @@
     margin-top: 2rem;
   }
 
-  #profile,
-  .section-container {
-    display: block;
-  }
-
   .arrow {
     display: none;
   }
@@ -32,17 +24,6 @@
   section,
   .section-container {
     height: fit-content;
-  }
-
-  section {
-    margin: 0 5%;
-  }
-
-  .section__pic-container {
-    width: 30vw;
-    height: 30vw;
-    margin: 0 auto 2rem;
-    justify-content: center;
   }
 
   .about-containers {
@@ -53,21 +34,22 @@
 
   .carousel {
     max-width: 1000px;
-    margin: 0 auto; /* Center it horizontally */
+    margin: 0 auto;
+    /* Center it horizontally */
   }
 }
 
 /* When screen width < 1200 px, desktop nav won't display */
 /* Instead hamburger button will show */
 @media screen and (max-width: 1200px) {
+
+  #hero {
+    gap: 2rem;
+  }
+
   #experience,
   .experience-details-container {
     margin-top: 2rem;
-  }
-
-  #profile,
-  .section-container {
-    display: block;
   }
 
   .arrow {
@@ -96,14 +78,19 @@
 }
 
 @media screen and (max-width: 600px) {
+
   #contact,
   footer {
     height: 40vh;
   }
 
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
+  #hero {
+    flex-direction: column;
+    gap: 0rem;
+  }
+
+  #hero-right {
+    min-width: 80vw;
   }
 
   article {
