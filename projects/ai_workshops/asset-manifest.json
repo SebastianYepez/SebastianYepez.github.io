@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/projects/ai_workshops/static/css/main.946cd0e2.css",
+    "main.js": "/projects/ai_workshops/static/js/main.f44a9c7c.js",
+    "static/media/LMdmg.png": "/projects/ai_workshops/static/media/LMdmg.865f86fd8b50b99283c4.png",
+    "static/media/LM1.png": "/projects/ai_workshops/static/media/LM1.a6ac39b79c87e190b086.png",
+    "static/media/AWSAgent.png": "/projects/ai_workshops/static/media/AWSAgent.cc34d64872bedd4333d4.png",
+    "static/media/ProfilePic.jpg": "/projects/ai_workshops/static/media/ProfilePic.53f6aabed250d0dc3803.jpg",
+    "static/media/openterm.png": "/projects/ai_workshops/static/media/openterm.a6ffb94c83bf7bccde6c.png",
+    "static/media/jup_ext.png": "/projects/ai_workshops/static/media/jup_ext.7f8a29e4cdafc4dd7b5d.png",
+    "static/media/AIDataScience_Image.jpg": "/projects/ai_workshops/static/media/AIDataScience_Image.47c2e1320e19dc6486e7.jpg",
+    "static/media/LM2.png": "/projects/ai_workshops/static/media/LM2.4ee07683278d6eb44ce3.png",
+    "static/media/KBase.png": "/projects/ai_workshops/static/media/KBase.1f707b93b17a2ecd5f73.png",
+    "static/media/LM3.png": "/projects/ai_workshops/static/media/LM3.4867398a7e2a18586a6a.png",
+    "static/media/selectkern.png": "/projects/ai_workshops/static/media/selectkern.0149c5b35a841a729d3e.png",
+    "static/media/AIAgent.png": "/projects/ai_workshops/static/media/AIAgent.fb51a438c6a488816648.png",
+    "static/media/LM4.png": "/projects/ai_workshops/static/media/LM4.384d44c479dd3d7913c1.png",
+    "static/media/myenv.png": "/projects/ai_workshops/static/media/myenv.d1d94f5c1a89123e7e06.png",
+    "static/media/LM5.png": "/projects/ai_workshops/static/media/LM5.690d75898578ab21a0bd.png",
+    "static/media/jup_cell.png": "/projects/ai_workshops/static/media/jup_cell.af92d6597217b50479d9.png",
+    "static/media/MNIST.png": "/projects/ai_workshops/static/media/MNIST.c79563c9617b32d8278f.png",
+    "static/media/flask.png": "/projects/ai_workshops/static/media/flask.06ac6875cb041cbb25fc.png",
+    "index.html": "/projects/ai_workshops/index.html",
+    "main.946cd0e2.css.map": "/projects/ai_workshops/static/css/main.946cd0e2.css.map",
+    "main.f44a9c7c.js.map": "/projects/ai_workshops/static/js/main.f44a9c7c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.946cd0e2.css",
+    "static/js/main.f44a9c7c.js"
+  ]
+}

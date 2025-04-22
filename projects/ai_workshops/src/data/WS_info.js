@@ -16,14 +16,14 @@ const workshops = [
     {
         id: "workshop2",
         title: "MNIST-100 Visualization",
-        description: "Learn how to visualize the MNIST-100 dataset!",
+        description: "Learn how to visualize the MNIST-100 dataset.",
         image: workshop2Img,
         status: "upcoming"
     },
     {
         id: "workshop3",
         title: "AI Agent Chatbot",
-        description: "Coming soon...",
+        description: "Learn how to build an AI Agent personalized to your needs.",
         image: workshop3Img,
         status: "done"
     },

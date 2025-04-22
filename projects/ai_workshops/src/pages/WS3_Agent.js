@@ -195,7 +195,7 @@ const WS3_Agent = () => {
 
             <p>All we need to do is start our backend server! Here is how: </p>
 
-            <small>If you need help on setting up a Python environment (chatenv) check out <a href="https://sebastianyepez.com/Project_Webpages/ai_workshops/#/workshop1" target="_blank"
+            <small>If you need help on setting up a Python environment (chatenv) check out <a href="https://sebastianyepez.com/projects/ai_workshops/#/workshop1" target="_blank"
                 rel="noopener noreferrer">this workshop</a> I made!</small>
             <TerminalBlock
                 initialText={
