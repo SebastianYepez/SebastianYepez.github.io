@@ -17,7 +17,7 @@ import selKern from "../data/ws_resources/ws1resources/selectkern.png"
 // Resources
 
 const summaryPoints = [
-    "Configure Python and learn to set up Virual Environments",
+    "Configure Python and learn to set up Virtual Environments",
     "Learn how to install and configure Jupyter Notebook in VS Code",
     "Run Python scripts inside VS Code's interactive window"
 ];
@@ -31,7 +31,7 @@ const WS1_VSJup = () => {
         <WorkshopLayout title="Workshop 1: VS Code + Jupyter Integration">
             <p style={{ textAlign: "center" }}>Welcome to Workshop 1! In this session, we’ll cover how to install and run Jupyter Notebooks in your
                 VSCode.</p>
-            <WorkshopOverview summaryPoints={summaryPoints} resources={resources} />
+            <WorkshopOverview workshopId="workshop1" summaryPoints={summaryPoints} resources={resources} />
 
             <section className="PythonInstallation">
                 <h4> Python Installation Guide </h4>

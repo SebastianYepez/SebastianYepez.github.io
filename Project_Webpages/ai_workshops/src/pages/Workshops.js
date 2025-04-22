@@ -1,6 +1,6 @@
 import React from "react";
 import WsCard from "../components/WS_Card";
-import workshops from "../data/WS_info"; // Import the refactored data
+import workshops from "../data/WS_info";
 
 const Workshops = () => {
     return (

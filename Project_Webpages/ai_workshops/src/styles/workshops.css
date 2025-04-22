@@ -22,6 +22,7 @@
     background-color: #f8f9fa;
     /* Light gray background */
     padding: 20px;
+    padding-right: 10px;
     padding-bottom: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -33,6 +34,99 @@
     /* Center it */
     width: 100%;
 }
+
+.workshop-overview {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    /* Adds spacing between text and image */
+}
+
+/* Text Section */
+.workshop-overview .workshop-text {
+    flex: 2;
+    /* Makes text take ~66% of space */
+    min-width: 60%;
+    /* Prevents shrinking too much */
+    overflow-wrap: break-word;
+    /* Ensures text wraps properly */
+    white-space: normal;
+}
+
+/* Image Section */
+.workshop-overview .workshop-image-container {
+    flex: 1;
+    /* Makes image take ~33% of space */
+    min-width: 30%;
+    /* Controls minimum width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image Styling */
+.workshop-overview .workshop-image-container img {
+    width: 75%;
+    /* Ensures image is fully responsive */
+    max-width: 450px;
+    /* Allows a larger image */
+    height: auto;
+    /* Keeps proportions */
+    border-radius: 10px;
+    /* Soft rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Light shadow */
+}
+
+/* Mobile Responsiveness: Stack text and image */
+@media (max-width: 768px) {
+    .workshop-overview {
+        flex-direction: column;
+        /* Stack elements on small screens */
+        text-align: center;
+        /* Center align for better layout */
+    }
+
+    .workshop-overview .workshop-text,
+    .workshop-overview .workshop-image-container {
+        width: 100%;
+        /* Full width on mobile */
+    }
+}
+
+.google-slides-container iframe {
+    border-radius: 10px;
+    width: 80%;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Light shadow */
+    display: block;
+    margin: 0 auto;
+    /* Center the presentation */
+}
+
+.open-google-slides {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.google-slides-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #4285F4;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.google-slides-link:hover {
+    background-color: #3367D6;
+}
+
+
 
 .overview-header {
     font-size: 22px;

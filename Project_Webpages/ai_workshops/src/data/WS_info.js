@@ -1,8 +1,9 @@
 import workshop1Img from "../assets/ws_img/vs_jupyter.png";
 import workshop2Img from "../assets/ws_img/MNIST.png";
-import workshop3Img from "../assets/ws_img/git.png";
-import workshop4Img from "../assets/ws_img/flask.png";
-import workshop5Img from "../assets/ws_img/clock.png";
+import workshop3Img from "../assets/ws_img/AIAgent.png";
+import workshop4Img from "../assets/ws_img/git.png";
+import workshop5Img from "../assets/ws_img/flask.png";
+import workshop6Img from "../assets/ws_img/clock.png";
 
 const workshops = [
     {
@@ -21,23 +22,30 @@ const workshops = [
     },
     {
         id: "workshop3",
-        title: "Git Basics",
+        title: "AI Agent Chatbot",
         description: "Coming soon...",
         image: workshop3Img,
-        status: "upcoming"
+        status: "done"
     },
     {
         id: "workshop4",
-        title: "Flask API Guide",
+        title: "Git Basics",
         description: "Coming soon...",
         image: workshop4Img,
         status: "upcoming"
     },
     {
         id: "workshop5",
-        title: "Upcoming Workshop",
+        title: "Flask API Guide",
         description: "Coming soon...",
         image: workshop5Img,
+        status: "upcoming"
+    },
+    {
+        id: "workshop6",
+        title: "Upcoming Workshop",
+        description: "Coming soon...",
+        image: workshop6Img,
         status: "upcoming"
     }
 ];
