@@ -3,8 +3,6 @@ import WorkShopLayout from "../components/WS_Layout"
 import WorkshopOverview from "../components/WS_Overview";
 import CollapsibleSection from "../components/CollapsibleSection";
 import TerminalBlock from "../components/Terminal";
-import JupyterCell from "../components/JupyterCell";
-import { Link } from "react-scroll";
 import "../styles/ws_styles/ws1.css";
 import GoogleSlidesEmbed from "../components/GoogleSlidesEmbed";
 import Chatbot from "../components/Chatbot";
@@ -29,15 +27,14 @@ const summaryPoints = [
 ];
 
 const resources = [
-    { name: "Google Slides", file: "ws1/setup_venv.txt" },
-    { name: "Chatbot.zip", file: "ws1/setup_venv.txt" }
+    { name: "chatbot.zip", file: "ws3/chatbot.zip" }
 ];
 
 const WS3_Agent = () => {
     return (
         <WorkShopLayout title="Workshop 3: How to Build an AI Agent">
             <p style={{ textAlign: "center" }}>Welcome to Workshop 3! In this session, we’ll cover how to build an AI agent - specifically,
-                a Chatbot.</p>
+                a chat bot.</p>
             <WorkshopOverview workshopId="workshop3" summaryPoints={summaryPoints} resources={resources} />
             <section className="WorkshopSlides">
                 <h4> Google Slides </h4>
@@ -56,7 +53,8 @@ const WS3_Agent = () => {
                 <li>Trading Bots (e.g., AI-powered stock trading agents)</li>
             </ul>
 
-            <p>Here is an example: AWS' AI Agent.</p>
+            <p>Here is an example: <a href="https://aws.amazon.com/" target="_blank"
+                    rel="noopener noreferrer">AWS'</a> AI Agent.</p>
             <div>
                 <img src={AWSAgent} alt={"AWS Agent"} className="ws3-aws-image" />
             </div>
@@ -231,6 +229,7 @@ const WS3_Agent = () => {
 
             <p>Here are some more resources you might be interested in exploring!</p>
             <ul>
+                <li>Learn the basics of LLMs: <a href="https://www.youtube.com/watch?v=LPZh9BOjkQs" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=LPZh9BOjkQs</a></li>
                 <li>Explore more models on HuggingFace: <a href="https://huggingface.co/" target="_blank" rel="noopener noreferrer">https://huggingface.co/</a></li>
                 <li>Learn more about LMStudio: <a href="https://medium.com/@researchgraph/what-is-lm-studio-ca2e60766364" target="_blank" rel="noopener noreferrer">https://medium.com/@researchgraph/what-is-lm-studio-ca2e60766364</a></li>
                 <li>More about Quantization: <a href="https://huggingface.co/docs/optimum/en/concept_guides/quantization" target="_blank" rel="noopener noreferrer">https://huggingface.co/docs/optimum/en/concept_guides/quantization</a></li>

@@ -1,3 +1,7 @@
+img {
+    border-radius: 10px;
+}
+
 .ws3-aws-image {
     width: 30%;
     display: block;
