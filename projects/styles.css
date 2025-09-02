@@ -1,0 +1,59 @@
+.title_header {
+    text-align: center;
+}
+
+.card-text {
+    color: #777;
+}
+
+.reg_link {
+    color: blue;
+}
+
+.reg_link:hover {
+    color: blue;
+    text-underline-offset: 0.3rem;
+}
+
+.project_image {
+    max-height: 400px;
+    width: 100%;
+    /* margin: 0 auto 20px auto; */
+    display: block;
+}
+
+.experience_image {
+    display: block;
+    max-width: 400px;
+    max-height: 127px;
+    width: 65%;
+    margin: auto auto auto auto;
+    object-fit: contain;
+}
+
+.project_image {
+    max-height: 120px;
+    /* Adjust per your design */
+    object-fit: contain;
+}
+
+.details {
+    padding: 0 1rem 0 1rem;
+}
+
+/* Height of your fixed navbar (tweak as needed) */
+:root {
+    --nav-offset: 72px;
+    /* try 56–88px depending on your nav height */
+}
+
+/* Smooth scrolling is optional but nice */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Ensure anything you jump to has extra top margin for the fixed nav */
+h2[id],
+.container[id] {
+    scroll-margin-top: calc(var(--nav-offset) + 12px);
+}

@@ -79,18 +79,6 @@ h6 {
   color: #00ccdd !important;
 }
 
-/* Buttons */
-.btn-color-1 {
-  background-color: #00ccdd;
-  color: #0f172a;
-  border: none;
-}
-
-.btn-color-1:hover {
-  background-color: #14b8a6;
-  color: #ffffff;
-}
-
 /* Footer */
 footer {
   background-color: #1e293b;
