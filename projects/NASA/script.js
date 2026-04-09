@@ -78,6 +78,7 @@ async function getRandomImage(query) {
     let mainImg = document.getElementById("main-img");
     let mainText = document.getElementById("main-txt");
     mainImg.src = imageLinks[randomIndex];
+    mainImg.alt = titles[randomIndex];
     mainText.style.color = "black"; // in case they previously had an error
     mainText.textContent = titles[randomIndex];
   } catch (error) {
@@ -97,3 +98,9 @@ function getImage() {
     mainText.textContent = "Please enter a query.";
   }
 }
+
+document.getElementById("query-input").addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    getImage();
+  }
+});

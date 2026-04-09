@@ -44,6 +44,10 @@
 @media screen and (max-width: 1200px) {
 
   #hero {
+    padding-top: 6rem;
+  }
+
+  .hero-inner {
     gap: 2rem;
   }
 
@@ -85,12 +89,22 @@
   }
 
   #hero {
+    gap: 0rem;
+  }
+
+  .hero-inner {
     flex-direction: column;
     gap: 0rem;
   }
 
+  #hero-left,
+  #hero-right {
+    width: 100%;
+  }
+
   #hero-right {
     min-width: 80vw;
+    padding: 1.5rem;
   }
 
   article {
@@ -148,5 +162,29 @@
 
   .text-container {
     text-align: justify;
+  }
+
+  .featured-grid {
+    justify-content: center;
+  }
+
+  .contact-info-upper-container {
+    flex-direction: column;
+  }
+
+  .skills-container {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+
+  .skills-list {
+    grid-template-columns: minmax(0, 280px);
+    justify-content: center;
+  }
+
+  .skill-item {
+    width: 100%;
   }
 }

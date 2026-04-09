@@ -1,8 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Sebastian Yepez's software engineering portfolio featuring projects, internships, research, and technical skills."
+    />
+    <meta property="og:title" content="Sebastian Yepez - Portfolio" />
+    <meta
+      property="og:description"
+      content="Projects, experience, research, and technical work by Sebastian Yepez."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/me/ProfilePic.JPG" />
+    <meta name="twitter:card" content="summary_large_image" />
     <title>Sebastian Yepez - Portfolio</title>
      
     <!-- Bootstrap CDN -->
@@ -38,21 +50,26 @@
     <!--Desktop Navigation-->
     <nav id="deskNav" class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
         <div class="container">
-          <a href="#" class="navbar-brand">
-            <i class="bi bi-house-door"></i>
+          <a href="#hero" class="navbar-brand nav-brand-mark">
+            <span class="brand-initials">SY</span>
+            <span class="brand-text">Sebastian Yepez | Home <i class="bi bi-house-door-fill"></i> </span>
           </a>
         
           <button
             class="navbar-toggler"
             data-bs-toggle="collapse"
             data-bs-target="#hamburg-target"
+            aria-controls="hamburg-target"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
             >
             <span class="navbar-toggler-icon"> </span>
             </button>
 
           <div id="hamburg-target" class="collapse navbar-collapse">
             <div class="navbar-nav ms-auto">
-                <a href="./projects" class="nav-link">Projects</a>
+              <a href="./projects" class="nav-link"><i class="bi bi-stars"></i> My Projects</a>
+                <a href="#featured-work" class="nav-link">Highlights</a>
                 <a href="#skills" class="nav-link">Skills</a>
                 <a href="#contact" class="nav-link">Contact Me</a>
             </div>
@@ -62,38 +79,114 @@
 
     <!-- HERO Section -->
 <section id="hero">
-    <div id="hero-left">
-      <!-- Left: Image + Intro -->
-                <div class="profile-pic-container">
-                    <img src="./assets/me/ProfilePic.JPG" alt="profile picture" class="profile-pic" />
-                </div>
-        
-        <div class="section__text">
-          <p class="section__text__p1">Hello, I'm</p>
-          <h1 class="title">Sebastian Yepez</h1>
-          <p class="section__text__p2">Software Engineer</p>
-        </div>
-      </div>
-  
-      <!-- Right: About Me -->
-      <div id="hero-right">
-        <h2>About Me</h2>
-        <p class="mt-4">
-            Hi! My name is Sebastian Yepez and I currently attend UNLV studying for a Bachelor's of Science 
-            in both Computer Science and Mathematics with a concentration in Actuarial Sciences. I'm currently in my fourth year
-            at UNLV and have been focusing on Machine Learning and Data Science, with the goal of breaking into quantitative finance.
-        </p>
+    <div class="hero-inner">
+      <div id="hero-left">
+        <!-- Left: Image + Intro -->
+                  <div class="profile-pic-container">
+                      <img src="./assets/me/SY_Headshot.jpg" alt="profile picture" class="profile-pic" />
+                  </div>
           
-        <div class="btn-container">
-            <button class="mt-4 btn btn-color-1" onclick="window.open('./resume.pdf')">View Resume</button>
-            <button class="mt-4 btn btn-color-1" onclick="location.href='./projects'">My Projects</button>
+          <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Sebastian Yepez</h1>
+            <p class="section__text__p2">Software Engineer</p>
           </div>
-          <div id="socials-container">
-            <img src="./assets/icons/linkedin.png" style="background-color:white; padding: 1px; border-radius: 20px;" alt="My LinkedIn Profile" class="icon" onclick="window.open('https://linkedin.com/in/sebastian-yepez', '_blank')">
-            <img src="./assets/icons/github.png" style="background-color:white; padding: 1px; border-radius: 20px;" alt="My GitHub Profile" class="icon" onclick="window.open('https://github.com/SebastianYepez', '_blank')">
+        </div>
+  
+        <!-- Right: About Me -->
+        <div id="hero-right">
+          <h2>About Me</h2>
+          <p class="mt-4">
+              I’m Sebastian Yepez, a senior at UNLV in my final semester pursuing dual Bachelor of Science degrees in Computer Science and Mathematics with a concentration in Actuarial Science. 
+              My work focuses on machine learning, data science, and building practical systems that turn data into actionable insights, with experience spanning software engineering, data engineering, and risk analytics. 
+              I’m especially interested in applying these skills to quantitative finance, where I aim to combine strong mathematical foundations with real-world impact as I transition into industry.
+          </p>
+            
+          <div class="btn-container">
+              <a class="mt-4 btn btn-color-1" href="./resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
+              <a class="mt-4 btn btn-color-1" href="./projects">My Projects</a>
+            </div>
+            <div id="socials-container" aria-label="Social links">
+              <a
+                class="social-link"
+                href="https://linkedin.com/in/sebastian-yepez"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Sebastian Yepez on LinkedIn"
+              >
+                <img src="./assets/icons/linkedin.png" alt="" class="icon social-icon" />
+              </a>
+              <a
+                class="social-link"
+                href="https://github.com/SebastianYepez"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Sebastian Yepez on GitHub"
+              >
+                <img src="./assets/icons/github.png" alt="" class="icon social-icon" />
+              </a>
+          </div>
         </div>
       </div>
-    
+</section>
+
+<section id="featured-work" class="mt-5">
+  <div class="text-center">
+    <p class="section__text__p1">A Few Highlights</p>
+    <h2 class="sections-title mb-4">Featured Work</h2>
+  </div>
+  <div class="featured-grid">
+    <article class="details-container highlight-card">
+      <div class="highlight-body">
+        <p class="highlight-label">Team Lead</p>
+        <h3>Rebel Remind</h3>
+        <p>
+          Senior Design competition-winning Chrome extension that brings UNLV events into one place.
+        </p>
+        <ul class="highlight-list">
+          <li>Led the team and project direction</li>
+          <li>Built with React, Flask, and Chrome Extension APIs</li>
+        </ul>
+      </div>
+      <div class="btn-container highlight-actions">
+        <a class="btn highlight-btn" href="./projects">View Project</a>
+      </div>
+    </article>
+
+    <article class="details-container highlight-card">
+      <div class="highlight-body">
+        <p class="highlight-label">Risk Analyst Intern</p>
+        <h3>Credit One Bank</h3>
+        <p>
+          Built analytics workflows with SQL, SAS, Power BI, and Python to support credit risk decisions.
+        </p>
+        <ul class="highlight-list">
+          <li>Improved reporting speed and visibility</li>
+          <li>Contributed to compliant, data-driven decision support</li>
+        </ul>
+      </div>
+      <div class="btn-container highlight-actions">
+        <a class="btn highlight-btn" href="./projects#work-experience">See Experience</a>
+      </div>
+    </article>
+
+    <article class="details-container highlight-card">
+      <div class="highlight-body">
+        <p class="highlight-label">Workshops Officer</p>
+        <h3>AI & Data Science Club</h3>
+        <p>
+          Created hands-on workshops and teaching materials for machine learning, Git, and AI topics.
+        </p>
+        <ul class="highlight-list">
+          <li>React-based workshop site</li>
+          <li>Focused on practical student onboarding</li>
+        </ul>
+      </div>
+      <div class="btn-container highlight-actions">
+        <a class="btn highlight-btn" href="./projects/ai_workshops/#/workshops">Open Workshops</a>
+      </div>
+    </article>
+  </div>
 </section>
 
 <section id="activities" class="mt-5">
@@ -101,50 +194,69 @@
     <p class="section__text__p1">If You're Interested In</p>
     <h1 class="sections-title mb-4">What I'm Up To</h1>
     </div>
-    <div class="d-flex flex-row flex-wrap justify-content-evenly gap-4">
+    <div class="activities-grid">
       
       <!-- Experience Card 1 -->
       <div class="details-container">
         <img src="./assets/icons/experience.png" alt="ribbon icon" class="icon" />
-        <h3>Work Experience</h3>
-        <p>
-          • Part-time intern at Credit One Bank <br />
-          • Part-time intern at Fetching Foods <br />
-        </p>
-        <h3>Past Experiences</h3>
-        <p>
-          • Internship at Odditt <br />
-          • STEM Student Mentor
-        </p>
+        <div class="activity-body">
+          <div class="activity-group">
+            <h3>Work Experience</h3>
+            <p>
+              • Part-time intern at Credit One Bank <br />
+              • Part-time intern at Fetching Foods <br />
+            </p>
+          </div>
+          <div class="activity-group">
+            <h3>Past Experiences</h3>
+            <p>
+              • Internship at Odditt <br />
+              • STEM Student Mentor
+            </p>
+          </div>
+        </div>
       </div>
   
       <!-- Experience Card 2 -->
       <div class="details-container">
         <img src="./assets/icons/experience.png" alt="ribbon icon" class="icon" />
-        <h3>Education</h3>
-        <p>
-          • B.S. Computer Science <br />
-          • B.S. Mathematics, Actuarial Sciences <br />
-        </p>
-        <h3>Extracurriculars</h3>
-        <p>
-          • Vice President @ UNLV ACM <br />
-          • Officer @ UNLV AI & Data Science Club
-        </p>
+        <div class="activity-body">
+          <div class="activity-group">
+            <h3>Education</h3>
+            <p>
+              • B.S. Computer Science <br />
+              • B.S. Mathematics, Actuarial Sciences <br />
+            </p>
+          </div>
+          <div class="activity-group">
+            <h3>Extracurriculars</h3>
+            <p>
+              • Vice President @ UNLV ACM <br />
+              • Officer @ UNLV AI & Data Science Club
+            </p>
+          </div>
+        </div>
       </div>
   
       <!-- Experience Card 3 -->
       <div class="details-container">
         <img src="./assets/icons/experience.png" alt="ribbon icon" class="icon" />
-        <h3>Hobbies</h3>
-        <p>
-          • Exercising <br />
-          • Going out to eat <br />
-        </p>
-        <h3>Currently Watching</h3>
-        <p>
-          • Dragonball Super <br />
-        </p>
+        <div class="activity-body">
+          <div class="activity-group">
+            <h3>Current Focus</h3>
+            <p>
+              • Machine learning and data science <br />
+              • Quantitative finance preparation <br />
+            </p>
+          </div>
+          <div class="activity-group">
+            <h3>Outside of Work</h3>
+            <p>
+              • Exercising <br />
+              • Trying new restaurants <br />
+            </p>
+          </div>
+        </div>
     </div>
     </div>
     <!-- <p class="mt-3">Read more on my blog!</p> -->
@@ -161,7 +273,7 @@
   
       <!-- Skills Row Container -->
       <div class="skills-container p-4">
-        <div class="skills-list d-flex flex-row flex-wrap gap-4 justify-content-start">
+        <div class="skills-list">
           <article class="skill-item">
             <i class="devicon-cplusplus-plain colored" style="font-size: 3rem"></i>
             <div>
@@ -345,7 +457,8 @@
                 <img
                     src="./assets/icons/email.png"
                     alt="Email icon"
-                    class="icon contact-icon email-icon"
+                    loading="lazy"
+                    class="icon social-icon contact-icon"
                 />
                 <!-- Opens local email app -->
                 <p><a href="mailto:yepez.sebastianesai@gmail.com">yepez.sebastianesai@gmail.com</a></p>
@@ -354,26 +467,28 @@
                 <img
                     src="./assets/icons/linkedin.png"
                     alt="LinkedIn icon"
-                    class="icon contact-icon"
+                    loading="lazy"
+                    class="icon social-icon contact-icon"
                 />
                 <!-- Make sure hyperlinked text is within the <a> tag, target="_blank" opens a new tab -->
-                <p><a href="https://linkedin.com/in/sebastian-yepez" target="_blank">LinkedIn</a></p>
+                <p><a href="https://linkedin.com/in/sebastian-yepez" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
             </div>
             <div class="contact-info-container">
                 <img
                     src="./assets/icons/github.png"
                     alt="GitHub icon"
-                    class="icon contact-icon"
+                    loading="lazy"
+                    class="icon social-icon contact-icon"
                 />
                 <!-- Make sure hyperlinked text is within the <a> tag, target="_blank" opens a new tab -->
-                <p><a href="https://github.com/SebastianYepez" target="_blank">GitHub</a></p>
+                <p><a href="https://github.com/SebastianYepez" target="_blank" rel="noopener noreferrer">GitHub</a></p>
             </div>
         </div>
      </section>
      <!-- Footer -->
       <footer class="container-fluid bg">
         <!-- &#169 is the © symbol-->
-        <p style="color: lightgray;">Copyright &#169; 2025 Sebastian Yepez. All Rights Reserved.</p>
+        <p style="color: lightgray;">Copyright &#169; 2026 Sebastian Yepez. All Rights Reserved.</p>
       </footer>
     <!--Reference JavaScript Files-->
     <!-- Boostrap JS -->

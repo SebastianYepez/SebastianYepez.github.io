@@ -12,6 +12,41 @@ footer nav {
   align-items: center;
 }
 
+.navbar .container {
+  min-height: 72px;
+}
+
+.nav-brand-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 600;
+}
+
+.nav-brand-mark:hover {
+  text-decoration: none;
+}
+
+.brand-initials {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #22d3ee, #2563eb);
+  color: #f8fafc;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.25);
+}
+
+.brand-text {
+  color: #f8fafc;
+  font-size: 0.98rem;
+  letter-spacing: 0.02em;
+}
+
 .nav-links {
   gap: 2rem;
   /* rem is a front-end unit of measurement. related to pixels */
@@ -21,22 +56,61 @@ footer nav {
 }
 
 .nav-link.active {
-  font-weight: bold;
+  font-weight: 600;
   color: #0d6efd !important;
-  /* Bootstrap primary blue */
   border-bottom: 2px solid #0d6efd;
+}
+
+.navbar-nav {
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.navbar .nav-link {
+  padding: 0.55rem 0.85rem !important;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  text-decoration: none;
+}
+
+.navbar .nav-link:hover {
+  background-color: rgba(34, 211, 238, 0.1);
 }
 
 /* link text */
 a {
-  color: black;
+  color: #e2e8f0;
   text-decoration: none;
 }
 
 a:hover {
-  color: whitesmoke;
+  color: #ffffff;
   text-decoration: underline;
-  text-underline-offset: 1rem;
+  text-underline-offset: 0.35rem;
   /* how far the underline is from the bottom of text */
   text-decoration-color: rgb(181, 181, 181);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #22d3ee;
+  outline-offset: 3px;
+  border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-nav {
+    align-items: stretch;
+    gap: 0.5rem;
+    padding-top: 0.75rem;
+  }
+
+  .brand-text {
+    font-size: 0.92rem;
+  }
 }

@@ -55,6 +55,10 @@ body {
   color: #ffffff;
 }
 
+body {
+  line-height: 1.6;
+}
+
 /* Optional: soften text colors */
 p,
 h1,
@@ -71,12 +75,22 @@ h6 {
   background-color: #1e293b !important;
 }
 
+.scroll-top .navbar {
+  background-color: transparent !important;
+  box-shadow: none;
+}
+
 .navbar .nav-link {
   color: #ffffff !important;
 }
 
 .navbar .nav-link:hover {
   color: #00ccdd !important;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:focus-visible {
+  color: #22d3ee !important;
 }
 
 /* Footer */
@@ -88,6 +102,10 @@ footer {
 /* Other containers or section backgrounds (optional) */
 .bg {
   background-color: #0f172a;
+}
+
+img {
+  max-width: 100%;
 }
 
 /* Custom tweaks */
